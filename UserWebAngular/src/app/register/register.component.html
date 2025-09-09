@@ -1,0 +1,39 @@
+<app-menu></app-menu>
+
+<div>
+    <form class="form" (ngSubmit)="register()">
+        <div>
+            <mat-form-field appearence="outline">
+                <mat-label>Nome</mat-label>
+                <input matInput name="nome" placeholder="" [(ngModel)]="user.nome" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearence="outline">
+                <mat-label>E-mail</mat-label>
+                <input matInput name="email" placeholder="" [(ngModel)]="user.email" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearence="outline">
+                <mat-label>Endereço</mat-label>
+                <input matInput name="endereco" placeholder="" [(ngModel)]="user.endereco" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearence="outline">
+                <mat-label>Saldo</mat-label>
+                <input matInput name="saldo" placeholder="" type="number" [(ngModel)]="user.saldo" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearence="outline">
+                <mat-label>Senha</mat-label>
+                <input matInput name="senha" placeholder="" type="password" [(ngModel)]="user.senha" required>
+            </mat-form-field>
+        </div>
+        <div>
+            <button mat-flat-button type="submit">Register</button>
+        </div>
+    </form>
+</div>

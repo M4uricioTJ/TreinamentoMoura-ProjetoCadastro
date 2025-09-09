@@ -1,0 +1,19 @@
+<app-menu></app-menu>
+<div class="user-details">
+    <button mat-flat-button class="button" (click)="openAll()">Buscar</button>
+    <h2 style="margin-top: 20px;">Detalhes do usuário</h2>
+    <div class="details-content">
+        <p><strong>ID: </strong>{{user.id}}</p>
+        <p><strong>Nome: </strong>{{user.nome}}</p>
+        <p><strong>Email: </strong>{{user.email}}</p>
+        <p><strong>Endereço: </strong>{{user.endereco}}</p>
+        <p><strong>Data de Cadastro: </strong>{{user.datacad | date:'dd/MM/yyyy'}}</p>
+        <p><strong>Saldo: </strong>{{user.saldo | currency:'BRL'}}</p>
+    </div>
+    <div style="margin-bottom: 15px;">
+    <button mat-flat-button class="button" (click)="deleteUser()">Deletar</button>
+    </div>
+    <div>
+    <button mat-flat-button class="button" (click)="updateUser()">Editar</button>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+.menu{
+    background-color: blue;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+.login{
+    padding-right: 1rem;
+}

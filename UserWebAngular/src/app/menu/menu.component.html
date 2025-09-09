@@ -1,0 +1,12 @@
+<mat-toolbar class="menu">
+    <div>
+        <button mat-button style="color: azure;" routerLink="/home">Home</button>
+        <button mat-button style="color: azure;" routerLink="/report">Report</button>
+        <button mat-button style="color: azure;" routerLink="/register">Register</button>
+        <button mat-button style="color: azure;" routerLink="/login">Login</button>
+    </div>
+    <div class="login">
+        <button mat-icon-button style="color: azure;" (click)="logout()"><mat-icon>settings_power</mat-icon></button>
+        <span style="color: azure">{{useremail}}</span>
+    </div>
+</mat-toolbar>

@@ -1,0 +1,17 @@
+.form{
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+mat-form-field{
+    width: 300px;
+    margin-bottom: 8px;
+}
+.button{
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
